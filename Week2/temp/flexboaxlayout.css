@@ -1,0 +1,46 @@
+.row {
+    display: flex;
+    align-items: stretch;
+
+
+}
+.col {
+    background-color: #aaa;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    height: 800px;
+
+
+}
+.col.middle {
+    flex-grow: 5;
+    animation-name: anim1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes anim1 {
+    /*start of anim*/
+    0% {
+        transform :rotate(0deg);
+        transform-origin: 0% 0%;
+    }
+    /*Middle of animation*/
+    50% {
+        transform :rotate(180deg);
+        transform-origin: 0% 0%;
+    }
+    /*end of animation*/
+
+    100% {
+        transform :rotate(360deg);
+        transform-origin: 0% 0%;
+    }
+}
+.col.outer {
+    flex-grow: 1;
+}

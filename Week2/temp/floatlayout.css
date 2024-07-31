@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+/* after and before are pseudo and * is a wildcard to show all elements*/
+*,*:before,*:after {
+    box-sizing: inherit;
+
+}
+
+.row:after {
+    clear:both;
+    content: "";
+    display: table;
+}
+
+.col {
+    float: left;
+    background-color: #aaa;
+    text-align: center;
+    font-size: 50px;
+    height: 800px;
+    margin: 1%;
+
+}
+
+.col.middle {
+    width: 58%;
+
+}
+
+.col.outer {
+    width: 18%;
+}
+
